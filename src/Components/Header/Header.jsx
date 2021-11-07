@@ -12,14 +12,31 @@ import styles from "./HeaderStyles";
 import { Link } from 'react-router-dom'
 import SidebarDrawer from "../Sidebar/SidebarDrawer";
 import MenuRounded from "@mui/icons-material/MenuRounded";
+import { useLocation, useNavigate } from "react-router-dom";
+
+// NavBarElement component
+export function NavBarElement(props) {
+    const classes = styles();
+    return (
+        <div
+            onClick={props.onClick}
+            className={`${props.pathCheck ? classes.activeNav : classes.navLinks
+                }`}
+            style={props.style}
+        >
+            <div>{props.children}</div>
+        </div>
+    );
+}
 
 // Header component
-function Header() {
+function Header(props) {
     const classes = styles();
     const theme = useTheme();
     const small = useMediaQuery(theme.breakpoints.down("sm"));
-    const [open, setOpen] = useState(false);
     const [drawerOpen, setDrawerOpen] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     return (
         <AppBar className={classes.root} elevation={0}>
@@ -36,17 +53,45 @@ function Header() {
                     <>
                         <div
                             className={classes.navbarElementsContainer}
-                            onClick={(e) => {
-                                setOpen(e.currentTarget);
-                            }}
                         >
                             {!small ? (
                                 <>
-                                    <Link to="/education" variant="body1" className={classes.navLinks}>Education</Link>
-                                    <Link to="/work" variant="body1" className={classes.navLinks}>Work</Link>
-                                    <Link to="/projects" variant="body1" className={classes.navLinks}>Projects</Link>
-                                    <Link to="/accomplishments" variant="body1" className={classes.navLinks}>Accomplishments</Link>
-                                    <Link to="/contact" variant="body1" className={classes.navLinks}>Contact</Link>
+                                    <NavBarElement
+                                        onClick={() => navigate("/")}
+                                        pathCheck={location.pathname === "/" || location.pathname === "/home/" || location.pathname === "/home"}
+                                    >
+                                        Home
+                                    </NavBarElement>
+                                    <NavBarElement
+                                        onClick={() => navigate("/education")}
+                                        pathCheck={location.pathname === "/education" || location.pathname === "/education/"}
+                                    >
+                                        Education
+                                    </NavBarElement>
+                                    <NavBarElement
+                                        onClick={() => navigate("/work")}
+                                        pathCheck={location.pathname === "/work" || location.pathname === "/work/"}
+                                    >
+                                        Work
+                                    </NavBarElement>
+                                    <NavBarElement
+                                        onClick={() => navigate("/projects")}
+                                        pathCheck={location.pathname === "/projects" || location.pathname === "/projects/"}
+                                    >
+                                        Projects
+                                    </NavBarElement>
+                                    <NavBarElement
+                                        onClick={() => navigate("/accomplishments")}
+                                        pathCheck={location.pathname === "/accomplishments" || location.pathname === "/accomplishments/"}
+                                    >
+                                        Accomplishments
+                                    </NavBarElement>
+                                    <NavBarElement
+                                        onClick={() => navigate("/contact")}
+                                        pathCheck={location.pathname === "/contact" || location.pathname === "/contact/"}
+                                    >
+                                        Contact
+                                    </NavBarElement>
                                 </>
                             ) :
                                 (

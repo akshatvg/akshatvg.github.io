@@ -42,20 +42,30 @@ export default makeStyles(({ breakpoints, palette }) => {
             alignSelf: "center",
             justifyContent: "center",
             color: "black",
-            fontWeight: "bolder",
-        },
-        textColored: {
-            color: `${palette.primary.alt} !important`,
+            fontWeight: "bolder !important",
         },
         navLinks: {
             marginLeft: "15px !important",
             marginRight: "15px !important",
-            fontWeight: "500",
+            fontWeight: "600 !important",
             textDecoration: "none",
             color: "#6d6e6e",
             "&:hover": {
                 color: `${palette.primary.main} !important`,
             },
+        },
+        activeNav: {
+            marginLeft: "15px !important",
+            marginRight: "15px !important",
+            fontWeight: "600 !important",
+            textDecoration: "none",
+            color: `${palette.primary.main} !important`,
+            "&:hover": {
+                color: `${palette.primary.alt} !important`,
+            },
+        },
+        textColored: {
+            color: `${palette.primary.main} !important`,
         },
     };
 });

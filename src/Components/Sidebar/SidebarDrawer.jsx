@@ -17,7 +17,7 @@ const style = makeStyles(({ breakpoints, palette }) => {
             borderRadius: 5,
             cursor: "pointer",
             "&:hover": {
-                background: "#F0F3F9",
+                backgroundColor: "#F0F3F9",
             },
         },
         sideBarElementActive: {
@@ -49,10 +49,10 @@ const style = makeStyles(({ breakpoints, palette }) => {
             alignSelf: "center",
             justifyContent: "center",
             color: "black",
-            fontWeight: "bolder",
+            fontWeight: "bolder !important",
         },
         textColored: {
-            color: palette.primary.alt,
+            color: `${palette.primary.main} !important`,
         },
     };
 });
@@ -83,6 +83,12 @@ export function SidebarDrawer(props) {
             <SidebarElement
                 onClick={() => navigate("/")}
                 pathCheck={location.pathname === "/" || location.pathname === "/home/" || location.pathname === "/home"}
+            >
+                Home
+            </SidebarElement>
+            <SidebarElement
+                onClick={() => navigate("/education")}
+                pathCheck={location.pathname === "/education" || location.pathname === "/education/"}
             >
                 Education
             </SidebarElement>

@@ -3,10 +3,10 @@ import { createTheme } from "@mui/material";
 // Primary theme
 const colorPallete = {
     primary: {
-        main: "#0C9CFC",
+        main: "#2C8AFD",
         light: "#D5E7FE",
-        dark: "#000E4B",
-        alt: "#1B6DF6",
+        dark: "#0987db",
+        alt: "#0C9CFC",
     },
 };
 
@@ -30,52 +30,6 @@ const customTheme = createTheme({
             '"Segoe UI Emoji"',
             '"Segoe UI Symbol"',
         ].join(","),
-    },
-    // Overrides
-    overrides: {
-        MuiIconButton: {
-            colorPrimary: {
-                backgroundColor: colorPallete.primary.main,
-                color: "white",
-                "&:hover": {
-                    backgroundColor: `${colorPallete.primary.dark}`,
-                },
-            },
-        },
-        MuiButton: {
-            root: {
-                height: "45px",
-                borderRadius: "10px",
-                textTransform: "none",
-                paddingInline: "20px",
-                textAlign: "center",
-                "& .MuiButton-label": {
-                    display: "inline",
-                    lineHeight: "normal",
-                    textDecoration: "none",
-                },
-            },
-            containedPrimary: {
-                backgroundColor: colorPallete.primary.main,
-                color: "#FFFFFF",
-                border: `2px solid ${colorPallete.primary.main}`,
-                "&:hover": {
-                    backgroundColor: colorPallete.primary.dark,
-                    color: "#FFFFFF",
-                },
-                "&:disabled": {
-                    border: "2px solid #fcfcfc",
-                }
-            },
-            outlinedPrimary: {
-                color: colorPallete.primary.main,
-                border: `2px solid ${colorPallete.primary.main}`,
-                "&:hover": {
-                    backgroundColor: colorPallete.primary.main,
-                    color: "#FFFFFF",
-                },
-            },
-        },
     },
 });
 
