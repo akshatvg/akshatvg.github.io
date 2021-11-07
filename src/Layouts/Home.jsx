@@ -1,12 +1,14 @@
-import Grid from '@mui/material/Grid';
+import Header from "../Components/Header/Header";
+// import Header from "../Components/InnerComponent/InnerComponent";
 
 function Landing() {
 
   return (
     <>
-    <Grid>
-      <p>hiiiiiii</p>
-      </Grid>
+    {/* Header */}
+      <Header />
+      {/* Inner Components */}
+      {/* <InnerComponent /> */}
     </>
   );
 }
