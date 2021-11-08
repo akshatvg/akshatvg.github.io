@@ -8,7 +8,7 @@ export default makeStyles(({ breakpoints, palette }) => {
         },
         root: {
             height: "100%",
-            minHeight: "100vh",
+            minHeight: "90vh",
             padding: 10,
             display: "flex",
             alignItems: "center",

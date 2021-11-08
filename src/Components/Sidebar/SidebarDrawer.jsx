@@ -3,7 +3,7 @@ import { makeStyles } from "@mui/styles";
 import { useNavigate, useLocation } from "react-router-dom";
 
 // Setting styles for SidebarDrawer
-const style = makeStyles(({ breakpoints, palette }) => {
+const styles = makeStyles(({ breakpoints, palette }) => {
     return {
         sideBarElement: {
             display: "flex",
@@ -59,13 +59,13 @@ const style = makeStyles(({ breakpoints, palette }) => {
 
 // SidebarElement component
 export function SidebarElement(props) {
-    const classes = style();
+    const classes = styles();
     return (
         <div
             onClick={props.onClick}
             className={`${classes.sideBarElement} ${props.pathCheck ? classes.sideBarElementActive : classes.sideBarElementInactive
                 }`}
-            style={props.style}
+            styles={props.styles}
         >
             <div>{props.children}</div>
         </div>
@@ -74,7 +74,7 @@ export function SidebarElement(props) {
 
 // SidebarDrawer component
 export function SidebarDrawer(props) {
-    const classes = style();
+    const classes = styles();
     const location = useLocation();
     const navigate = useNavigate();
     return (

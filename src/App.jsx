@@ -6,6 +6,7 @@ import {
   Route
 } from 'react-router-dom'
 import Home from "./Layouts/Home";
+import Contact from "./Layouts/Contact";
 import customTheme from "./Utils/customTheme";
 import { ThemeProvider } from '@mui/material/styles';
 
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
+          <Route exact path="/contact" element={<Contact />} />
           {/* <Route exact path="*" element={<ErrorPage />} /> */}
         </Routes>
       </BrowserRouter>

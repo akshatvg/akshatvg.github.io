@@ -1,9 +1,18 @@
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
 import styles from "./AboutStyles.jsx";
+import { useEffect } from "react";
+import scrollDown from "../../Assets/scroll-down.gif";
 
 function AboutSection() {
     const classes = styles();
-
+    const theme = useTheme();
+    const small = useMediaQuery(theme.breakpoints.down("sm"));
+    useEffect(() => {
+        let url = window.location.href.split("/");
+        let target = url[url.length - 1].toLowerCase();
+        let element = document.getElementById(target);
+        element && element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, []);
     return (
         <>
             {/* About Section */}
@@ -31,6 +40,16 @@ function AboutSection() {
                         </Typography>
                     </Grid>
                 </Grid>
+                {!small && (
+                    <a href="#skills-section" onClick={e => {
+                        let whereTo = document.getElementById("skills-section");
+                        e.preventDefault();
+                        whereTo && whereTo.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }} style={{
+                        display: "flex", justifyContent: "center",
+                    }}
+                    ><img src={scrollDown} alt="Scroll Down" width="70px" height="auto" /></a>
+                )}
             </Container>
         </>
     );
