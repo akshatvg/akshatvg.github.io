@@ -3,7 +3,6 @@ import styles from "./HeadStyles.jsx";
 import AkshatGupta from "../../Assets/Public_Speaking_akshatvg.jpeg";
 import Typewriter from 'typewriter-effect';
 import { useEffect } from "react";
-import scrollDown from "../../Assets/scroll-down.gif";
 
 function HeadSection() {
     const classes = styles();
@@ -37,7 +36,7 @@ function HeadSection() {
                         item
                         xs={12}
                         md={6}
-                        style={{ height: "200px" }}
+                        style={{ height: "210px" }}
                     >
                         <Typography variant="h3" className={classes.welcomeTitle}>Hey!</Typography>
                         <Typography variant="h3" className={classes.title}>
@@ -65,7 +64,7 @@ function HeadSection() {
                         </Grid>
                     )}
                 </Grid>
-                {!small && (
+                {!small && (<span className="scroll-btn">
                     <a href="#about-section" onClick={e => {
                         let whereTo = document.getElementById("about-section");
                         e.preventDefault();
@@ -73,7 +72,13 @@ function HeadSection() {
                     }} style={{
                         display: "flex", justifyContent: "center",
                     }}
-                    ><img src={scrollDown} alt="Scroll Down" width="70px" height="auto" /></a>
+                    >
+                        <span className="mouse">
+                            <span>
+                            </span>
+                        </span>
+                    </a>
+                </span>
                 )}
             </Container>
         </>

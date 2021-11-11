@@ -3,10 +3,10 @@ import { createTheme } from "@mui/material";
 // Primary theme
 const colorPallete = {
     primary: {
-        main: "#2C8AFD",
-        light: "#D5E7FE",
-        dark: "#0987db",
-        alt: "#0C9CFC",
+        main: "#3F0071",
+        light: "#610094",
+        dark: "#130050",
+        alt: "#610094",
     },
 };
 

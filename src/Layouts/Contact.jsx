@@ -3,7 +3,6 @@ import { Container, Grid, Typography } from "@mui/material";
 import ContactLink from '../Components/ContactLink/ContactLink.jsx';
 import Footer from "../Components/Footer/Footer.jsx";
 import { makeStyles } from "@mui/styles";
-import Content from '../Lib/Content.jsx';
 
 // Styles for contact page
 const styles = makeStyles(({ breakpoints, palette }) => {
@@ -59,9 +58,7 @@ function Contact() {
             <Typography variant="h3" className={classes.title}>
               Get in <span className={classes.textColored}>Touch</span>
             </Typography>
-            {Content.social.map((item, index) => {
-              return <ContactLink key={index} data={item} spacing={2} />;
-            })}
+            <ContactLink spacing={2} />
           </Grid>
         </Grid>
       </Container>

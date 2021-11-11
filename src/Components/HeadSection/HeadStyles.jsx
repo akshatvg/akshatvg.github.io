@@ -44,7 +44,7 @@ export default makeStyles(({ breakpoints, palette }) => {
             borderRadius: "10px",
             boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.16)",
             [breakpoints.down("sm")]: {
-                width: "260px",
+                width: "280px",
                 marginTop: "50px",
             },
         },
