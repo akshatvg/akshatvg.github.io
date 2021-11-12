@@ -10,6 +10,7 @@ import Contact from "./Layouts/Contact";
 import Education from "./Layouts/Education";
 import customTheme from "./Utils/customTheme";
 import { ThemeProvider } from '@mui/material/styles';
+import WorkExperience from './Layouts/WorkExperience';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/education" element={<Education />} />
+          <Route exact path="/work" element={<WorkExperience />} />
           <Route exact path="/contact" element={<Contact />} />
           {/* <Route exact path="*" element={<ErrorPage />} /> */}
         </Routes>

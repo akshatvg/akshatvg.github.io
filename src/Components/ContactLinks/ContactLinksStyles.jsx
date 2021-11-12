@@ -95,10 +95,12 @@ export default makeStyles(({ breakpoints, palette }) => {
             width: "20%",
             alignItems: "center",
             justifyContent: "center",
+            textAlign: "center",
             "&:hover": {
                 backgroundColor: `${palette.primary.alt} !important`,
             },
             [breakpoints.down("sm")]: {
+                height: "50px",
                 width: "65%",
             },
         },

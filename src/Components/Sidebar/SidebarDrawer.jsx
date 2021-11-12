@@ -99,12 +99,6 @@ export function SidebarDrawer(props) {
                 Work Experience
             </SidebarElement>
             <SidebarElement
-                onClick={() => navigate("/projects")}
-                pathCheck={location.pathname === "/projects" || location.pathname === "/projects/"}
-            >
-                Projects
-            </SidebarElement>
-            <SidebarElement
                 onClick={() => navigate("/accomplishments")}
                 pathCheck={location.pathname === "/accomplishments" || location.pathname === "/accomplishments/"}
             >

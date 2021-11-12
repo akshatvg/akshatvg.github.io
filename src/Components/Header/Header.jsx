@@ -75,12 +75,6 @@ function Header(props) {
                                         Work
                                     </NavBarElement>
                                     <NavBarElement
-                                        onClick={() => navigate("/projects")}
-                                        pathCheck={location.pathname === "/projects" || location.pathname === "/projects/"}
-                                    >
-                                        Projects
-                                    </NavBarElement>
-                                    <NavBarElement
                                         onClick={() => navigate("/accomplishments")}
                                         pathCheck={location.pathname === "/accomplishments" || location.pathname === "/accomplishments/"}
                                     >
