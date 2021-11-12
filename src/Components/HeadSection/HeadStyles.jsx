@@ -54,14 +54,33 @@ export default makeStyles(({ breakpoints, palette }) => {
             fontWeight: "600 !important",
             color: "#ffffff",
             height: "46px",
-            width: "50%",
+            width: "33%",
             alignItems: "center",
             justifyContent: "center",
+            marginRight: "30px !important",
             "&:hover": {
                 backgroundColor: `${palette.primary.alt} !important`,
             },
             [breakpoints.down("sm")]: {
-                width: "65%",
+                width: "70%",
+                marginBottom: "20px !important",
+            },
+        },
+        altBtn: {
+            backgroundColor: `transparent !important`,
+            boxShadow: "none !important",
+            fontWeight: "600 !important",
+            color: `${palette.primary.main} !important`,
+            height: "46px",
+            width: "33%",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            "&:hover": {
+                backgroundColor: `whitesmoke !important`,
+            },
+            [breakpoints.down("sm")]: {
+                width: "70%",
             },
         },
     };

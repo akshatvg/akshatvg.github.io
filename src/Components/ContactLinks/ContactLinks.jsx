@@ -7,10 +7,11 @@ import MediumIcon from '@mui/icons-material/Create';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
-import styles from "./ContactLinkStyles";
-import { Typography, Grid, Container } from "@mui/material";
+import styles from "./ContactLinksStyles";
+import { Typography, Button } from "@mui/material";
+import Resume from "../../Assets/Akshat_Gupta_Resume.pdf";
 
-const ContactLink = () => {
+const ContactLinks = () => {
     const classes = styles();
     return (
         <>
@@ -44,8 +45,12 @@ const ContactLink = () => {
             <a href="https://www.instagram.com/akshatvg">
                 <InstagramIcon fontSize="large" className={classes.instagram} />
             </a>
+            <Typography variant="h5" className={classes.title} mt={2} mb={2}>
+                Resume
+            </Typography>
+            <Button variant="contained" href={Resume} className={classes.themeBtn} download>Download Resume</Button>
         </>
     );
 };
 
-export default ContactLink;
+export default ContactLinks;

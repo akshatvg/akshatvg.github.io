@@ -86,5 +86,21 @@ export default makeStyles(({ breakpoints, palette }) => {
                 color: `#5c94f2 !important`,
             },
         },
+        themeBtn: {
+            backgroundColor: `${palette.primary.main} !important`,
+            boxShadow: "none !important",
+            fontWeight: "600 !important",
+            color: "#ffffff",
+            height: "46px",
+            width: "20%",
+            alignItems: "center",
+            justifyContent: "center",
+            "&:hover": {
+                backgroundColor: `${palette.primary.alt} !important`,
+            },
+            [breakpoints.down("sm")]: {
+                width: "65%",
+            },
+        },
     };
 });

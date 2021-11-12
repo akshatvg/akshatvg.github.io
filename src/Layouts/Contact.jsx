@@ -1,6 +1,6 @@
 import Header from "../Components/Header/Header";
 import { Container, Grid, Typography } from "@mui/material";
-import ContactLink from '../Components/ContactLink/ContactLink.jsx';
+import ContactLink from '../Components/ContactLinks/ContactLinks.jsx';
 import Footer from "../Components/Footer/Footer.jsx";
 import { makeStyles } from "@mui/styles";
 
