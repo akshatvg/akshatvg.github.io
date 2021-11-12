@@ -1,0 +1,159 @@
+/* Fonts */
+
+@font-face {
+	font-family: "Avenir Next";
+	font-weight: 300;
+	src: local("Avenir Next"), url('./Fonts/AvenirNext-300.ttf')format("truetype");
+}
+
+@font-face {
+	font-family: "Avenir Next";
+	font-weight: 400;
+	src: local("Avenir Next"), url('./Fonts/AvenirNext-400.ttf')format("truetype");
+}
+
+@font-face {
+	font-family: "Avenir Next";
+	font-weight: 500;
+	src: local("Avenir Next"), url('./Fonts/AvenirNext-500.ttf')format("truetype");
+}
+
+@font-face {
+	font-family: "Avenir Next";
+	font-weight: 600;
+	src: local("Avenir Next"), url('./Fonts/AvenirNext-600.ttf')format("truetype");
+}
+
+@font-face {
+	font-family: "Avenir Next";
+	font-weight: 700;
+	src: local("Avenir Next"), url('./Fonts/AvenirNext-700.ttf')format("truetype");
+}
+
+@font-face {
+	font-family: "Avenir Next";
+	font-weight: 900;
+	src: local("Avenir Next"), url('./Fonts/AvenirNext-900.ttf')format("truetype");
+}
+
+/* General for all components */
+
+body {
+	margin: 0;
+	font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: "100vh";
+	scroll-behavior: smooth;
+}
+
+/* Scroll Down */
+
+@-webkit-keyframes ani-mouse {
+	0% {
+		opacity: 1;
+		top: 29%;
+	}
+	15% {
+		opacity: 1;
+		top: 50%;
+	}
+	50% {
+		opacity: 0;
+		top: 50%;
+	}
+	100% {
+		opacity: 0;
+		top: 29%;
+	}
+}
+
+@-moz-keyframes ani-mouse {
+	0% {
+		opacity: 1;
+		top: 29%;
+	}
+	15% {
+		opacity: 1;
+		top: 50%;
+	}
+	50% {
+		opacity: 0;
+		top: 50%;
+	}
+	100% {
+		opacity: 0;
+		top: 29%;
+	}
+}
+
+@keyframes ani-mouse {
+	0% {
+		opacity: 1;
+		top: 29%;
+	}
+	15% {
+		opacity: 1;
+		top: 50%;
+	}
+	50% {
+		opacity: 0;
+		top: 50%;
+	}
+	100% {
+		opacity: 0;
+		top: 29%;
+	}
+}
+
+.scroll-btn {
+	display: block;
+	text-align: center;
+	margin: auto !important;
+}
+
+.scroll-btn>* {
+	display: inline-block;
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: normal;
+	color: black;
+	letter-spacing: 2px;
+}
+
+.scroll-btn>*:hover, .scroll-btn>*:focus, .scroll-btn>*.active {
+	color: black;
+}
+
+.scroll-btn>*:hover, .scroll-btn>*:focus, .scroll-btn>*:active, .scroll-btn>*.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 2px solid black;
+	border-radius: 23px;
+}
+
+.scroll-btn .mouse>* {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: black;
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.5s linear infinite;
+	-moz-animation: ani-mouse 2.5s linear infinite;
+	animation: ani-mouse 2.5s linear infinite;
+}
