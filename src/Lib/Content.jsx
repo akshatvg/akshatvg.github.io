@@ -82,6 +82,11 @@ export default {
         },
     ],
     accomplishments: [{
+        award: "Profitech 2021",
+        description: "Won the First Place in the Technology Track out of 240 registered global users.",
+        by: "Profitech",
+        when: "Aug 2021",
+    }, {
         award: "DEVSPACE 2021",
         description: "Won the Second Place in the Industrial Collaborations by Dyte track out of 1,414 registered users.",
         by: "Computer Society of India- VIT University",
