@@ -63,7 +63,7 @@ function ErrorPage() {
                         <Typography variant="h5" className={classes.title}>
                             Unfortunately this page <span className={classes.textColored}>doesn't</span> exist
                         </Typography>
-                        <Button variant="contained" href="/" className={classes.themeBtn} download>Go Home</Button>
+                        <Button variant="contained" href="/" className={classes.themeBtn}>Go Home</Button>
                     </Grid>
                 </Grid>
             </Container>

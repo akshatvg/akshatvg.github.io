@@ -1,16 +1,21 @@
 import Header from "../Components/Header/Header";
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography, Paper } from "@mui/material";
 import Footer from "../Components/Footer/Footer.jsx";
-import AccomplishmentsCards from '../Components/AccomplishmentsCards/AccomplishmentsCard.jsx';
 import { makeStyles } from "@mui/styles";
 import Content from '../Lib/Content';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
 
-// Styles for Work Experience page
+// Styles for Accomplishments page
 const styles = makeStyles(({ breakpoints, palette }) => {
     return {
         root: {
             height: "100%",
-            minHeight: "100vh",
+            minHeight: "80vh",
             padding: 10,
             display: "flex",
             alignItems: "center",
@@ -30,24 +35,15 @@ const styles = makeStyles(({ breakpoints, palette }) => {
                 marginTop: "10vh !important",
             },
         },
-        subtitle: {
-            marginBottom: "30px !important",
-        },
-        hiddenLinks: {
-            color: `${palette.primary.main}`,
-            textDecoration: "none",
-            "&:hover": {
-                color: `${palette.primary.alt} !important`,
-            },
-        }
     };
 });
 
 function Accomplishments() {
     const classes = styles();
+
     return (
         <>
-            {/* Work Experience Page */}
+            {/* Accomplishments Page */}
             <Header />
             <Container maxWidth="lg">
                 <Grid
@@ -59,15 +55,48 @@ function Accomplishments() {
                         xs={12}
                     >
                         <Typography variant="h3" className={classes.title}>
-                            Work <span color="primary">Experience</span>
+                            Accomplishments
                         </Typography>
-                        <Grid
-                            container
-                            className={classes.root} spacing={3} alignItems="stretch">
-                            {Content.work.map((work, index) => {
-                                return <AccomplishmentsCards spacing={2} key={index} work={work} />;
-                            })}
-                        </Grid>
+                        <Paper sx={{ width: '100%', overflow: 'hidden' }}>
+                            <TableContainer>
+                                <Table stickyHeader aria-label="sticky table">
+                                    <TableHead>
+                                        <TableRow>
+                                            <TableCell>
+                                                Award
+                                            </TableCell>
+                                            <TableCell>
+                                                Description
+                                            </TableCell>
+                                            <TableCell>
+                                                By
+                                            </TableCell>
+                                            <TableCell>
+                                                When
+                                            </TableCell>
+                                        </TableRow>
+                                    </TableHead>
+                                    <TableBody>
+                                        {Content.accomplishments.map((row, index) => (
+                                            <TableRow hover role="checkbox" tabIndex={-1} key={index}>
+                                                <TableCell>
+                                                    {row.award}
+                                                </TableCell>
+                                                <TableCell>
+                                                    {row.description}
+                                                </TableCell>
+                                                <TableCell>
+                                                    {row.by}
+                                                </TableCell>
+                                                <TableCell>
+                                                    {row.when}
+                                                </TableCell>
+                                            </TableRow>
+                                        ))}
+                                    </TableBody>
+                                </Table>
+                            </TableContainer>
+                        </Paper>
                     </Grid>
                 </Grid>
             </Container>

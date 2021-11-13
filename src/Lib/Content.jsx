@@ -80,5 +80,61 @@ export default {
             duration: "Jun 2019 - Aug 2019",
             feedback: "../Assets/FindMindAnalytics.pdf",
         },
-    ]
+    ],
+    accomplishments: [{
+        award: "DEVSPACE 2021",
+        description: "Won the Second Place in the Industrial Collaborations by Dyte track out of 1,414 registered users.",
+        by: "Computer Society of India- VIT University",
+        when: "Mar 2021",
+    }, {
+        award: "WomenTechies 2021",
+        description: "Won the Second Runner Up award in this women-centric hackathon out of around 380 registered users.",
+        by: "DSC VIT",
+        when: "Mar 2021",
+    }, {
+        award: "VIT Hack 2020",
+        description: "Won the first place in the Gravitas AI Case partner problem statement as well as the AWS Educate open challenge out of over 1,200 registered participants.",
+        by: "Vellore Institute of Technology, Vellore",
+        when: "Oct 2020",
+    }, {
+        award: "Achiever & Special Achiever Award 2020",
+        description: "Awarded the Achiever Award & Special Achiever Award for exemplary performance at various National & International events and in recognition of my academic performance.",
+        by: "Vellore Institute of Technology, Vellore",
+        when: "Sep 2020",
+    }, {
+        award: "RTE Hack 2020",
+        description: "Won the Audience’s Favourite Award by being the top voted and most liked project of the hackathon.",
+        by: "Agora.io",
+        when: "Sep 2020",
+    }, {
+        award: "HopHacks Fall 2019",
+        description: "Won the best Healthcare Hack award powered by Siemens Healthineers out of 44 submitted projects.",
+        by: "Johns Hopkins University",
+        when: "Sep 2019",
+    }, {
+        award: "PennApps 2019",
+        description: "Qualified for the top 30 teams out of 242 worthy teams.",
+        by: "University of Pennsylvania",
+        when: "Sep 2019",
+    }, {
+        award: "IBM Challenge",
+        description: "Won the IBM Challenge in AngelHack Bangalore out of 46 submitted projects.",
+        by: "AngelHack India",
+        when: "Jun 2019",
+    }, {
+        award: "VinHack",
+        description: "Won third place in VinHack, hosted by VinnovateIT out of 213 registered participants.",
+        by: "VinnovateIT",
+        when: "Mar 2019",
+    }, {
+        award: "404 Not Found",
+        description: "Won first place in my first Webathon- 404 Not Found, hosted by CodeChef-VIT out 393 registered participants.",
+        by: "CodeChef-VIT",
+        when: "Oct 2018",
+    }, {
+        award: "DevFest 2018",
+        description: "Won third place in my first Hackathon- DevFest 2018, hosted by DSC-VIT (earlier known as Google Developers Group) out of 150 registered teams.",
+        by: "DSC VIT",
+        when: "Oct 2018",
+    },],
 };

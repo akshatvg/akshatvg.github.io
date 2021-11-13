@@ -11,6 +11,7 @@ import Education from "./Layouts/Education";
 import customTheme from "./Utils/customTheme";
 import { ThemeProvider } from '@mui/material/styles';
 import WorkExperience from './Layouts/WorkExperience';
+import Accomplishments from './Layouts/Accomplishments';
 import ErrorPage from './Layouts/ErrorPage';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/education" element={<Education />} />
           <Route exact path="/work" element={<WorkExperience />} />
+          <Route exact path="/accomplishments" element={<Accomplishments />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="*" element={<ErrorPage />} />
         </Routes>
