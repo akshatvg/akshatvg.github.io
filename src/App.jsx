@@ -13,6 +13,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import WorkExperience from './Layouts/WorkExperience';
 import Accomplishments from './Layouts/Accomplishments';
 import ErrorPage from './Layouts/ErrorPage';
+import ScrollToTop from './Utils/ScrollToTop';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     // Theme is used in the ThemeProvider
     <ThemeProvider theme={theme}>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
