@@ -46,7 +46,7 @@ function HeadSection() {
                         <Typography variant="h6" className={classes.subtitle}>
                             <Typewriter
                                 options={{
-                                    strings: ['I plan, strategise, manage and execute large-scale projects.', 'I write code and develop projects.', 'I  can make a project, a product.', 'I can help your product get users and a product-market fit.', 'I have recruited and managed teams of 30+ people.'],
+                                    strings: ['I plan, strategise, manage and execute large-scale projects.', 'I write code and develop projects.', 'I  can make a project, a business.', 'I can help your product get users and a product-market fit.', 'I have recruited and managed teams of 50+ people.'],
                                     autoStart: true,
                                     loop: true,
                                 }}

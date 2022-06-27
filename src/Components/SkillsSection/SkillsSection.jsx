@@ -23,19 +23,19 @@ function SkillsSection() {
                             My <span className={classes.textColored}>Skills</span>
                         </Typography>
                         <Typography variant="h5" className={classes.subtitle}>
-                            Managerial
+                            Languages, Frameworks, Tools and SDKs
                         </Typography>
                         <Grid container spacing={1}>
-                            {Content.managerialSkills.map((item, index) => {
+                            {Content.languagesFrameworksTools.map((item, index) => {
                                 return (<Grid item key={index}><Chip label={item} color="primary" size="medium" className={(index % 2 === 0) ? classes.ChipPrimary : classes.ChipSecondary} key={index} md={3} /></Grid>);
                             }
                             )}
                         </Grid>
                         <Typography variant="h5" className={classes.subtitle}>
-                            Technical
+                            Project Management
                         </Typography>
                         <Grid container spacing={1}>
-                            {Content.technicalSkills.map((item, index) => {
+                            {Content.projectManagement.map((item, index) => {
                                 return (<Grid item key={index}><Chip label={item} color="primary" size="medium" className={(index % 2 === 0) ? classes.ChipPrimary : classes.ChipSecondary} key={index} md={3} /></Grid>);
                             }
                             )}
@@ -44,7 +44,16 @@ function SkillsSection() {
                             Marketing
                         </Typography>
                         <Grid container spacing={1}>
-                            {Content.marketingSkills.map((item, index) => {
+                            {Content.marketing.map((item, index) => {
+                                return (<Grid item key={index}><Chip label={item} color="primary" size="medium" className={(index % 2 === 0) ? classes.ChipPrimary : classes.ChipSecondary} key={index} md={3} /></Grid>);
+                            }
+                            )}
+                        </Grid>
+                        <Typography variant="h5" className={classes.subtitle}>
+                            DevOps and Cloud Computing
+                        </Typography>
+                        <Grid container spacing={1}>
+                            {Content.devOpsCloud.map((item, index) => {
                                 return (<Grid item key={index}><Chip label={item} color="primary" size="medium" className={(index % 2 === 0) ? classes.ChipPrimary : classes.ChipSecondary} key={index} md={3} /></Grid>);
                             }
                             )}
