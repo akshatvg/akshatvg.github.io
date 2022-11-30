@@ -6,7 +6,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import MediumIcon from '@mui/icons-material/Create';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import Phone from '@mui/icons-material/Phone';
 import styles from "./ContactLinksStyles";
 import { Typography, Button } from "@mui/material";
 import Resume from "../../Assets/Akshat_Gupta_Resume.pdf";
@@ -22,7 +22,7 @@ const ContactLinks = () => {
                 <EmailIcon fontSize="large" className={classes.email} />
             </a>
             <a href="tel:+918799979997">
-                <PhoneInTalkIcon fontSize="large" className={classes.phone} />
+                <Phone fontSize="large" className={classes.phone} />
             </a>
             <Typography variant="h5" className={classes.title} mt={2}>
                 Social
