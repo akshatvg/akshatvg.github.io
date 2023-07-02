@@ -25,6 +25,18 @@ function App() {
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <ScrollToTop />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPEMCLQ8VG" id="google-analytics" defer
+          strategy="afterInteractive"></script>
+        <script id="google-analytics-measurement" dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SPEMCLQ8VG');`,
+        }}
+          defer
+          strategy="afterInteractive"
+        />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
