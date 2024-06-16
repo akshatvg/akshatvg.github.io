@@ -178,6 +178,8 @@ function Education() {
               I've been certified by Microsoft, Google, Coursera and Udemy for my skills in various domains:
             </Typography>
             <ul mt={1} mb={2}>
+              <li><a target="_blank" rel="noreferrer" className={classes.hiddenLinks} href="https://www.pmi.org/certifications/certification/resources/registry">Project Management Professional</a> (Credential ID 3711794)</li>
+              <li><a target="_blank" rel="noreferrer" className={classes.hiddenLinks} href="https://www.credly.com/badges/5053df0e-dcc8-4330-9075-1b11b25b6ae3/github">AWS Certified Cloud Practitioner</a> (Credential ID 5053df0e-dcc8-4330-9075-1b11b25b6ae3)</li>
               <li><a target="_blank" rel="noreferrer" className={classes.hiddenLinks} href="https://www.youracclaim.com/badges/92059ed2-9f17-4b35-abda-23c1c9d3ff53">Microsoft Certified: Azure Fundamentals</a> (Credential ID: CbcH-Dw8E)</li>
               <li><a target="_blank" rel="noreferrer" className={classes.hiddenLinks} href="https://skillshop.exceedlms.com/student/award/63280081">Google Cloud Platform Business Professional Accreditation</a> (Credential ID: 63280081)</li>
               <li><a target="_blank" rel="noreferrer" className={classes.hiddenLinks} href="https://learndigital.withgoogle.com/digitalgarage/validate-certificate-code">The Fundamentals of Digital Marketing</a> (Credential ID: P7V 2QN 63L)</li>

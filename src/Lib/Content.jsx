@@ -1,8 +1,8 @@
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
     languagesFrameworksTools: ["Python", "ReactJS", "NextJS", "TypeScript", "JavaScript", "Flutter", "GitHub", "Shopify", "WordPress", "Firebase", "HubSpot", "jQuery", "Agora", "Go", "NodeJS", "PHP", "Dart", ".NET"],
-    projectManagement: ["Jira", "Asana", "Miro", "Figma", "Postman", "Slack", "Trello", "ClickUp", "Zeplin", "Google Play Developer", "App Store Connect", "HubSpot", "Zendesk"],
-    marketing: ["Search Engine Optimisation", "Search Engine Marketing", "Social Media Marketing", "CRM Management", "Data Analytics", "CMS Management", "Graphic Designing"],
+    projectManagement: ["Jira", "Asana", "Miro", "Figma", "Postman", "Slack", "Trello", "ClickUp", "Zeplin", "Google Play Developer", "App Store Connect"],
+    marketing: ["Google Ads", "Google Search Console", "Google Analytics", "Google Trends", "SEM Rush", "HubSpot", "Google Data Studio", "GoHighLevel", "Zoho CRM", "HubSpot", "Zendesk", "Meta Ads", "Social Media Marketing", "Search Engine Optimisation", "Search Engine Marketing"],
     devOpsCloud: ["DNS Management", "CI/CD", "Kubernetes", "Docker", "Nginx", "AWS", "Google Cloud", "Heroku", "Azure", "Vercel", "Netlify", "Cloudflare"],
     education: {
         ug: {
