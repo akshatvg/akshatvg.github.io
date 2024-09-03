@@ -53,7 +53,7 @@ function HeadSection() {
                             />
                         </Typography>
                         <Button variant="contained" href="/contact" className={classes.themeBtn}>Get In Touch</Button>
-                        <Button variant="outlined" href={Resume} className={classes.altBtn}>Download Resume</Button>
+                        {/* <Button variant="outlined" href={Resume} className={classes.altBtn}>Download Resume</Button> */}
                     </Grid>
                     {!small && (
                         <Grid

@@ -45,10 +45,10 @@ const ContactLinks = () => {
             <a href="https://www.instagram.com/akshatvg">
                 <InstagramIcon fontSize="large" className={classes.instagram} />
             </a>
-            <Typography variant="h5" className={classes.title} mt={2} mb={2}>
+            {/* <Typography variant="h5" className={classes.title} mt={2} mb={2}>
                 Resume
             </Typography>
-            <Button variant="contained" href={Resume} className={classes.themeBtn} download>Download Resume</Button>
+            <Button variant="contained" href={Resume} className={classes.themeBtn} download>Download Resume</Button> */}
         </>
     );
 };
