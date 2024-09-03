@@ -28,7 +28,7 @@ export default {
         {
             company: "Interacts AI",
             link: "https://www.interacts.ai/",
-            role: "Chief Executive Officer",
+            role: "Co-Founder",
             description: ["At Interacts.ai, I lead the development and deployment of pioneering AI conversational voice bots, designed to revolutionize the sales and customer service sectors. My role encompasses a blend of product innovation, project management, sales strategy execution, and digital marketing leadership, with the aim of positioning Interacts.ai at the forefront of AI-driven customer engagement. I have developed and executed a forward-thinking business strategy that establishes Interacts.ai as a leader in providing AI conversational solutions, enhancing both customer interactions and sales efficiency. I've guided the creation of human-like, tailored AI voice bots that offer personalized and effective customer service solutions, implemented robust sales strategies to ensure widespread market adoption, and enhanced our digital presence through strategic marketing efforts. Additionally, I have directed fundraising initiatives to support technological and market expansion, and cultivated a team of professionals dedicated to innovation and excellence. Under my guidance, Interacts.ai is setting new standards in the industry, transforming business-customer interactions, and driving unmatched efficiency and satisfaction."],
             duration: "March 2024 - Present",
             feedback: "",
@@ -36,7 +36,7 @@ export default {
         {
             company: "Peritys",
             link: "https://www.peritys.com/",
-            role: "Chief Executive Officer",
+            role: "Consultant",
             description: ["In my role at Peritys, I lead a forward-thinking IT and marketing consultancy firm dedicated to empowering businesses with cutting-edge solutions. Peritys stands at the intersection of innovation and strategy, providing a wide array of services from digital transformation and strategic IT consulting to comprehensive marketing strategies. My responsibilities encompass guiding the company's strategic direction, fostering key client relationships, and overseeing the development and delivery of our services. Under my leadership, Peritys has flourished into a dynamic consultancy, known for its ability to transform challenges into scalable solutions and opportunities for growth. I am deeply involved in all facets of the business, from operational excellence and financial management to talent acquisition and team leadership. My vision for Peritys is not only to continue expanding our service offerings but also to sustain a culture of innovation, collaboration, and continuous improvement. Driving the development of our flagship SaaS product, Interacts AI, showcases our commitment to leveraging technology to enhance customer engagement and operational efficiency. My role ensures that Peritys remains at the forefront of technological advancements, delivering unparalleled value to our clients and setting new standards in the consultancy landscape."],
             duration: "March 2024 - Present",
             feedback: "",
